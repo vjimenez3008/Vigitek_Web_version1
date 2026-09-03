@@ -64,3 +64,11 @@ jobs:
           slot-name: 'Production'
           package: .
           
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'vigitek-web'
+          slot-name: 'Production'
+          package: .
+          
